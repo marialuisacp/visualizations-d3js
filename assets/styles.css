@@ -4,20 +4,27 @@ body, html {
   margin: 0;
   padding: 0;
 }
-
 body * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', 'Open Sans', sans-serif;
   color: #3C4A59;
 }
-
 a {
   text-decoration: none;
 }
-
 h1 a {
-  color: #9CAAB9;
+  color: #333333;
 }
-
+h1.logo, h1 a.logo {
+	background-image: url('logo-h.png');
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 240px;
+}
+h1 span {
+	display: none;
+}
 .container {
   margin: 0 auto;
   display: block;
