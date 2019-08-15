@@ -3,6 +3,7 @@
 <head>
   <meta charset='UTF-8'>
   <title> D3-v5 - Pontos </title>
+  <link rel='stylesheet' href='../../../lib/highlight/default.min.css'>
   <link rel='stylesheet' href='../../../assets/styles.css'>
 </head>
 <body>
@@ -17,6 +18,10 @@
     <p class='souce'>
       Fonte: Dados aleatórios
     </p>
+    <pre>
+      <code class='javascript' id='code'>
+      </code>
+    </pre>
   </div>
 
   <!-- Importando a biblioteca -->
@@ -25,5 +30,14 @@
   <script src='../../../config.js'></script>
   <!-- Grafico de pontos - codigo -->
   <script src='scatterplot-chart-v5.js'></script>
+  <!-- Importando a biblioteca highlightjs -->
+  <script src='../../../lib/highlight/highlight.min.js'></script>
+  <!-- Funcoes gerais do projeto -->
+  <script src='../../../utils.js'></script>
+
+  <!-- Carregamento do codigo fonte -->
+  <script>
+    showSourceCode('scatterplot-chart-v5.js');
+  </script>
 </body>
 </html>

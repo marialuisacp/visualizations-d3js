@@ -30,3 +30,45 @@ h1 span {
   display: block;
   width: 1000px;
 }
+code.hljs {
+	padding-left: 48px;
+	padding-right: 24px;
+	padding-bottom: 48px;
+	padding-top: 24px;
+}
+ul {
+	list-style: none;
+}
+ul.nav-items {
+	display: flex;
+}
+ul.nav-items li {
+	width: 160px;
+	display: inline-block;
+	margin: 8px;
+	text-align: center;
+}
+.box-thumb {
+	width: 160px;
+	height: 160px;
+	margin-bottom: 8px;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 100%;
+}
+.box-thumb.bar {
+	background-image: url('charts/bar.png');
+}
+.box-thumb.line {
+	background-image: url('charts/line.png');
+}
+.box-thumb.donut {
+	background-image: url('charts/donut.png');
+}
+.box-thumb.pie {
+	background-image: url('charts/pie.png');
+}
+.box-thumb.scatterplot {
+	background-image: url('charts/scatterplot.png');
+}

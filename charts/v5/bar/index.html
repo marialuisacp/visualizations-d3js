@@ -18,52 +18,25 @@
     <p class='souce'>
       Fonte: Dados aleatórios
     </p>
-
     <pre>
-      <code class='javascript'>
-        const x_scale = d3.scaleBand()
-          .rangeRound([0, width - margin.left - margin.right]);
-        const y_scale = d3.scaleLinear()
-          .domain([0, 1])
-          .range([height, 0]);
-
-        const data = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'].map((d) => ({ 
-          value: d3.randomUniform()(), category: d }));
-
-        x_scale.domain(data.map((d) => d.category));
-        const svg = d3.select('#box-chart').append('svg')
-
-        const g = svg.attr('width', width + margin.left)
-          .attr('height', height + margin.top + margin.bottom)
-          .append('g')
-          .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-
-        g.append('g')
-          .attr('transform', 'translate(0,' + height + ')')
-          .call(d3.axisBottom(x_scale))
-        g.append('g')
-            .call(d3.axisLeft(y_scale))
+      <code class='javascript' id='code'>
       </code>
     </pre>
   </div>
   <!-- Importando a biblioteca d3js -->
   <script src='../../../lib/d3/d3.v5.min.js'></script>
-  <!-- Carregamento do codigo -->
-  <script>
-    let code = '';
-    d3.text('../../../config.js').then(function(conf) {
-      code = conf;
-      d3.text('bar-chart-v5.js').then(function(text) {
-        // document.getElementById('code').innerHTML = conf + '\n\n' + text;
-        hljs.initHighlightingOnLoad();
-      });
-    });
-  </script>
   <!-- Importando a biblioteca highlightjs -->
   <script src='../../../lib/highlight/highlight.min.js'></script>
   <!-- Pega as variaveis gerais do projeto -->
   <script src='../../../config.js'></script>
   <!-- Grafico de barras - codigo -->
   <script src='bar-chart-v5.js'></script>
+  <!-- Funcoes gerais do projeto -->
+  <script src='../../../utils.js'></script>
+
+  <!-- Carregamento do codigo fonte -->
+  <script>
+    showSourceCode('bar-chart-v5.js');
+  </script>
 </body>
 </html>
