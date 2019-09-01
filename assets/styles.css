@@ -91,6 +91,41 @@ ul.nav-items li {
 	background-image: url('charts/scatterplot.png');
 }
 
+ul.nav-items-scales {
+	display: block;
+}
+
+.type-scale {
+	margin: 32px auto;
+}
+
+.type-scale .box-thumb-scale {
+	width: 890px;
+	height: 68px;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 100%;
+}
+
+.type-scale .box-thumb-scale.linear {
+	background-image: url('scales/scale-linear.jpg');
+}
+.type-scale .box-thumb-scale.band {
+	background-image: url('scales/scale-band.png');
+}
+.type-scale .box-thumb-scale.log {
+	background-image: url('scales/scale-log.png');
+}
+.type-scale .box-thumb-scale.ordinal {
+	background-image: url('scales/scale-ordinal.png');
+}
+.type-scale .box-thumb-scale.pow {
+	background-image: url('scales/scale-pow.png');
+}
+.type-scale .box-thumb-scale.sqrt {
+	background-image: url('scales/scale-sqrt.png');
+}
 .hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
   color: #CA2C68 !important;
 }
