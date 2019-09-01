@@ -8,14 +8,14 @@
  *
  */
 
-const showSourceCode = (fileName) => {
-	let code = '';
-		
-	d3.text('../../../config.js').then(function(conf) {
-	  // code += conf;
-	  d3.text(fileName).then(function(text) {
-	    document.getElementById('code').innerHTML = code + conf + '\n\n' + text;
-	    hljs.initHighlighting();
-	  });
-	});
+const showSourceCode = (fileName, type) => {
+  let code = '';
+
+  d3.text('../../../config/' + type + '.js').then(function (conf) {
+    // code += conf;
+    d3.text(fileName).then(function (text) {
+      document.getElementById('code').innerHTML = code + conf + '\n\n' + text;
+      hljs.initHighlighting();
+    });
+  });
 };
