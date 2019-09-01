@@ -40,18 +40,20 @@ ul {
 	list-style: none;
 }
 ul.nav-items {
-	display: flex;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 }
 ul.nav-items li {
-	width: 160px;
+	width: 240px;
 	display: inline-block;
 	margin: 8px;
+	margin-bottom: 24px;
 	text-align: center;
 }
 .box-thumb {
-	width: 160px;
+	width: 240px;
 	height: 160px;
-	margin-bottom: 8px;
 	background-color: #eee;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -59,6 +61,9 @@ ul.nav-items li {
 }
 .box-thumb.bar {
 	background-image: url('charts/bar.png');
+}
+.box-thumb.bar-horizontal {
+	background-image: url('charts/bar-horizontal.png');
 }
 .box-thumb.line {
 	background-image: url('charts/line.png');
