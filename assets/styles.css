@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
 
 body, html {
   margin: 0;
@@ -8,8 +9,20 @@ body * {
   font-family: 'Arial', 'Open Sans', sans-serif;
   color: #3C4A59;
 }
+
+h1, h2, h3, h4, h5 {
+  /* width: 80%; */
+  border-bottom: solid #1297E0 2px;
+  padding-bottom: 16px;
+}
+
+h1, h2, h3, h4, h5, 
+h1 *, h2 *, h3 *, h4 *{
+	font-family: 'Lexend Deca', sans-serif;
+}
 a {
   text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
 }
 h1 a {
   color: #333333;
@@ -76,4 +89,8 @@ ul.nav-items li {
 }
 .box-thumb.scatterplot {
 	background-image: url('charts/scatterplot.png');
+}
+
+.hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
+  color: #CA2C68 !important;
 }
